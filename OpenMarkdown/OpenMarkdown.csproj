@@ -1,9 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <PackageId>Open.Markdown</PackageId>
+        <Version>1.0.0</Version>
+        <PackageTags>Markdown,md,Markup Langauge</PackageTags>
+        <Authors>nurefexc</Authors>
+        <RepositoryUrl>https://github.com/nurefexc/OpenMarkdown</RepositoryUrl>
+        <Description>
+            A modular C# Markdown renderer. The core library defines a BaseMarkdown contract, allowing different
+            dialects (e.g., CommonMark, GFM) to be plugged in and rendered via a static OpenMarkDown utility class.
+            Clean, extensible, and type-safe.
+        </Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <None Include="../LICENSE.md" Pack="true" PackagePath="\"/>
+        <None Include="../README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 </Project>
